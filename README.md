@@ -23,5 +23,5 @@ Certifique-se de que o serviço de log do sistema e o SSH estão ativos:
 sudo service rsyslog start
 sudo service ssh start
 
- 2. Instalação
+### 2. Instalação
 Clone o repositório e entre na pasta:
