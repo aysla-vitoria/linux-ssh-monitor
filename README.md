@@ -1,1 +1,44 @@
-# linux-ssh-monitor
+# 🕵️ SSH Real-Time Monitor (Bash)
+
+Script em Bash desenvolvido para monitorar tentativas de ataques de força bruta (Brute Force) via SSH em sistemas Linux.
+
+## 🚀 Funcionalidades
+- **Monitoramento em Tempo Real:** Utiliza o comando `tail -f` para analisar os logs do sistema (`/var/log/auth.log`) instantaneamente.
+- **Detecção de Intrusão:** Filtra tentativas de login falhas e extrai informações críticas.
+- **Extração de Dados:** Identifica o usuário alvo e o IP de origem do atacante.
+- **Alertas Visuais:** Interface amigável no terminal com marcação de data e hora.
+
+## 🛠️ Tecnologias
+- **Bash Scripting**
+- **RegEx** (Expressões Regulares para extração de dados)
+- **Linux Auth Logs** (Segurança de infraestrutura)
+
+## 📖 Como Usar
+ Para rodar este monitor no seu ambiente Linux (ou WSL), siga os passos abaixo:
+
+1. Pré-requisitos
+Certifique-se de que o serviço de log do sistema está ativo:
+
+´´´Bash
+sudo service rsyslog start
+sudo service ssh start
+2. Instalação
+Clone o repositório e entre na pasta:
+Bash
+git clone https://github.com/seu-usuario/linux-ssh-monitor.git
+cd linux-ssh-monitor
+
+3. Permissões
+Dê permissão de execução ao script:
+Bash
+chmod +x monitor_ssh.sh
+
+5. Execução
+Execute o monitor (é necessário sudo para ler os logs do sistema):
+Bash
+./monitor_ssh.sh
+
+5. Como Testar (Simulação de Ataque)
+Abra um segundo terminal e tente realizar um acesso SSH com um usuário que não existe:
+Bash
+ssh usuario_teste@localhost
