@@ -14,31 +14,14 @@ Script em Bash desenvolvido para monitorar tentativas de ataques de força bruta
 - **Linux Auth Logs** (Segurança de infraestrutura)
 
 ## 📖 Como Usar
- Para rodar este monitor no seu ambiente Linux (ou WSL), siga os passos abaixo:
 
-1. Pré-requisitos
-Certifique-se de que o serviço de log do sistema está ativo:
-Bash
+Para rodar este monitor no seu ambiente Linux (ou WSL), siga os passos abaixo:
+
+### 1. Pré-requisitos
+Certifique-se de que o serviço de log do sistema e o SSH estão ativos:
+```bash
 sudo service rsyslog start
 sudo service ssh start
 
-3. Instalação
+ 2. Instalação
 Clone o repositório e entre na pasta:
-Bash
-git clone https://github.com/seu-usuario/linux-ssh-monitor.git
-cd linux-ssh-monitor
-
-4. Permissões
-Dê permissão de execução ao script:
-Bash
-chmod +x monitor_ssh.sh
-
-5. Execução
-Execute o monitor (é necessário sudo para ler os logs do sistema):
-Bash
-./monitor_ssh.sh
-
-5. Como Testar (Simulação de Ataque)
-Abra um segundo terminal e tente realizar um acesso SSH com um usuário que não existe:
-Bash
-ssh usuario_teste@localhost
