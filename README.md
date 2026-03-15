@@ -12,16 +12,4 @@ Script em Bash desenvolvido para monitorar tentativas de ataques de força bruta
 - **Bash Scripting**
 - **RegEx** (Expressões Regulares para extração de dados)
 - **Linux Auth Logs** (Segurança de infraestrutura)
-
-## 📖 Como Usar
-
-Para rodar este monitor no seu ambiente Linux (ou WSL), siga os passos abaixo:
-
-### 1. Pré-requisitos
-Certifique-se de que o serviço de log do sistema e o SSH estão ativos:
-```bash
-sudo service rsyslog start
-sudo service ssh start
-
-### 2. Instalação
-Clone o repositório e entre na pasta:
+  
