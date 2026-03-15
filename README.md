@@ -18,17 +18,17 @@ Script em Bash desenvolvido para monitorar tentativas de ataques de força bruta
 
 1. Pré-requisitos
 Certifique-se de que o serviço de log do sistema está ativo:
-
-´´´Bash
+Bash
 sudo service rsyslog start
 sudo service ssh start
-2. Instalação
+
+3. Instalação
 Clone o repositório e entre na pasta:
 Bash
 git clone https://github.com/seu-usuario/linux-ssh-monitor.git
 cd linux-ssh-monitor
 
-3. Permissões
+4. Permissões
 Dê permissão de execução ao script:
 Bash
 chmod +x monitor_ssh.sh
